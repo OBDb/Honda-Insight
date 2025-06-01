@@ -1,32 +1,8 @@
 command_id: DB33.012F
 test_cases:
-- response: 18DAF10E03412F72
+- response: 18DAF10E03412F3E
   expected_values:
-    FLI: 44.70588
-- response: 18DAF10E03412F75
+    FLI: 24.31373
+- response: 18DAF10E03412F99
   expected_values:
-    FLI: 45.88235
-- response: 18DAF10E03412F78
-  expected_values:
-    FLI: 47.05882
-- response: 18DAF10E03412F7B
-  expected_values:
-    FLI: 48.23529
-- response: 18DAF10E03412F81
-  expected_values:
-    FLI: 50.58824
-- response: 18DAF10E03412F86
-  expected_values:
-    FLI: 52.54902
-- response: 18DAF10E03412F87
-  expected_values:
-    FLI: 52.94118
-- response: 18DAF10E03412F89
-  expected_values:
-    FLI: 53.72549
-- response: 18DAF10E03412F8C
-  expected_values:
-    FLI: 54.90196
-- response: 18DAF10E03412F8E
-  expected_values:
-    FLI: 55.68627
+    FLI: 60
