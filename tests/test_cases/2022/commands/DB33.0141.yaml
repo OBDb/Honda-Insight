@@ -1,11 +1,35 @@
 command_id: DB33.0141
 test_cases:
-- response: |-
+- expected_values:
+    ACRFCMPL: 0
+    ACRF_ENA: 0
+    AIR_CMPL: 0
+    AIR_ENA: 0
+    CAT_CMPL: 0
+    CAT_ENA: 0
+    CCM_CMPL: 0
+    CCM_ENA: 1
+    CIM_SUP_FLAG: SPARK
+    EGR_CMPL: 0
+    EGR_ENA: 0
+    EVAPCMPL: 0
+    EVAP_ENA: 0
+    FUEL_CMPL: 0
+    FUEL_ENA: 0
+    HCATCMPL: 0
+    HCAT_ENA: 0
+    HTR_CMPL: 0
+    HTR_ENA: 0
+    MIS_CMPL: 0
+    MIS_ENA: 0
+    O2S_CMPL: 0
+    O2S_ENA: 0
+  response: |-
     18DAF10106414100040000
     18DAF10E0641410005E004
     18DAF10206414100040000
     18DAF10606414100040000
-  expected_values:
+- expected_values:
     ACRFCMPL: 0
     ACRF_ENA: 0
     AIR_CMPL: 0
@@ -29,12 +53,95 @@ test_cases:
     MIS_ENA: 0
     O2S_CMPL: 0
     O2S_ENA: 0
-- response: |-
+  response: |-
+    18DAF10106414100040000
+    18DAF10E0641410005E004
+    18DAF10606414100040000
+    18DAF10206414100040000
+- expected_values:
+    ACRFCMPL: 0
+    ACRF_ENA: 0
+    AIR_CMPL: 0
+    AIR_ENA: 0
+    CAT_CMPL: 0
+    CAT_ENA: 0
+    CCM_CMPL: 0
+    CCM_ENA: 1
+    CIM_SUP_FLAG: SPARK
+    EGR_CMPL: 0
+    EGR_ENA: 0
+    EVAPCMPL: 0
+    EVAP_ENA: 0
+    FUEL_CMPL: 0
+    FUEL_ENA: 0
+    HCATCMPL: 0
+    HCAT_ENA: 0
+    HTR_CMPL: 0
+    HTR_ENA: 0
+    MIS_CMPL: 0
+    MIS_ENA: 0
+    O2S_CMPL: 0
+    O2S_ENA: 0
+  response: |-
+    18DAF10106414100040000
+    18DAF10E0641410027E1A1
+    18DAF10606414100040000
+    18DAF10206414100040000
+- expected_values:
+    ACRFCMPL: 0
+    ACRF_ENA: 0
+    AIR_CMPL: 0
+    AIR_ENA: 0
+    CAT_CMPL: 0
+    CAT_ENA: 0
+    CCM_CMPL: 0
+    CCM_ENA: 1
+    CIM_SUP_FLAG: SPARK
+    EGR_CMPL: 0
+    EGR_ENA: 0
+    EVAPCMPL: 0
+    EVAP_ENA: 0
+    FUEL_CMPL: 0
+    FUEL_ENA: 0
+    HCATCMPL: 0
+    HCAT_ENA: 0
+    HTR_CMPL: 0
+    HTR_ENA: 0
+    MIS_CMPL: 0
+    MIS_ENA: 0
+    O2S_CMPL: 0
+    O2S_ENA: 0
+  response: |-
     18DAF10E0641410005E1A5
     18DAF10106414100040000
     18DAF10606414100040000
     18DAF10206414100040000
-  expected_values:
+- expected_values:
+    ACRFCMPL: 0
+    ACRF_ENA: 0
+    AIR_CMPL: 0
+    AIR_ENA: 0
+    CAT_CMPL: 1
+    CAT_ENA: 1
+    CCM_CMPL: 0
+    CCM_ENA: 1
+    CIM_SUP_FLAG: SPARK
+    EGR_CMPL: 1
+    EGR_ENA: 1
+    EVAPCMPL: 0
+    EVAP_ENA: 0
+    FUEL_CMPL: 1
+    FUEL_ENA: 1
+    HCATCMPL: 0
+    HCAT_ENA: 0
+    HTR_CMPL: 0
+    HTR_ENA: 1
+    MIS_CMPL: 0
+    MIS_ENA: 1
+    O2S_CMPL: 1
+    O2S_ENA: 1
+  response: 18DAF10E0641410027E1A1
+- expected_values:
     ACRFCMPL: 0
     ACRF_ENA: 0
     AIR_CMPL: 0
@@ -58,32 +165,8 @@ test_cases:
     MIS_ENA: 0
     O2S_CMPL: 0
     O2S_ENA: 0
-- response: |-
+  response: |-
     18DAF10E0641410027E1A5
     18DAF10106414100040000
     18DAF10206414100040000
     18DAF10606414100040000
-  expected_values:
-    ACRFCMPL: 0
-    ACRF_ENA: 0
-    AIR_CMPL: 0
-    AIR_ENA: 0
-    CAT_CMPL: 0
-    CAT_ENA: 0
-    CCM_CMPL: 0
-    CCM_ENA: 1
-    CIM_SUP_FLAG: SPARK
-    EGR_CMPL: 0
-    EGR_ENA: 0
-    EVAPCMPL: 0
-    EVAP_ENA: 0
-    FUEL_CMPL: 0
-    FUEL_ENA: 0
-    HCATCMPL: 0
-    HCAT_ENA: 0
-    HTR_CMPL: 0
-    HTR_ENA: 0
-    MIS_CMPL: 0
-    MIS_ENA: 0
-    O2S_CMPL: 0
-    O2S_ENA: 0
