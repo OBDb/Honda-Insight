@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     APP_D: 20
   response: 18DAF10E03414933
+- expected_values:
+    APP_D: 74.90196
+  response: 18DAF10E034149BF
