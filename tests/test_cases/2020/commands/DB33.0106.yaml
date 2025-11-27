@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     SHRTFT1: -28
   response: 18DAF10E0341068055555555
+- expected_values:
+    SHRTFT1: -25.65625
+  response: 18DAF10E0341068355555555
