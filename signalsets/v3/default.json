@@ -81,10 +81,10 @@
   "signals": [
     {"id": "INSIGHT_HVB_MOD_1A_T", "path": "Battery", "fmt": {"bix": 472,  "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 1A temperature"},
     {"id": "INSIGHT_HVB_MOD_3A_T", "path": "Battery", "fmt": {"bix": 504,  "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 3A temperature"},
-    {"id": "INSIGHT_ECT_1",        "path": "Engine",  "fmt": {"bix": 1608, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 1",        "suggestedMetric": "engineCoolantTemperature"},
-    {"id": "INSIGHT_ECT_2",        "path": "Engine",  "fmt": {"bix": 1624, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 2",        "suggestedMetric": "engineCoolantTemperature"},
-    {"id": "INSIGHT_ECT_3",        "path": "Engine",  "fmt": {"bix": 1640, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 3",        "suggestedMetric": "engineCoolantTemperature"},
-    {"id": "INSIGHT_ECT_4",        "path": "Engine",  "fmt": {"bix": 1656, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 4",        "suggestedMetric": "engineCoolantTemperature"}
+    {"id": "INSIGHT_ECT_1",        "path": "Engine",  "fmt": {"bix": 1608, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 1"},
+    {"id": "INSIGHT_ECT_2",        "path": "Engine",  "fmt": {"bix": 1624, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 2"},
+    {"id": "INSIGHT_ECT_3",        "path": "Engine",  "fmt": {"bix": 1640, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 3"},
+    {"id": "INSIGHT_ECT_4",        "path": "Engine",  "fmt": {"bix": 1656, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 4"}
   ]},
 { "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2240"}, "freq": 1, "dbgfilter": { "to": 2020 },
   "signals": [
@@ -269,13 +269,13 @@
   ]},
 { "hdr": "DBEF", "cmd": {"22": "2001"}, "freq": 5, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
-    {"id": "INSIGHT_MOTOR_INVERTER_CURRENT",      "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "max": 327.67,  "min": -327.68,                "div": 100,             "sign": true, "unit": "amps"       }, "name": "Motor inverter, current"},
-    {"id": "INSIGHT_BATTERY_COOLANT_TEMPERATURE", "path": "Battery",  "fmt": {"bix": 88,  "len": 8,  "max": 215,     "min": -40,                                "add": -40,               "unit": "celsius"    }, "name": "Battery coolant temperature"},
-    {"id": "INSIGHT_BATTERY_MODULE_POWER",        "path": "Battery",  "fmt": {"bix": 168, "len": 16, "max": 524.272, "min": -524.288, "mul": 0.016,                         "sign": true, "unit": "kilowatts"  }, "name": "Battery module power"},
-    {"id": "INSIGHT_GENERATOR_MOTOR_SPEED",       "path": "Movement", "fmt": {"bix": 184, "len": 8,  "max": 16320,                    "mul": 64,                                          "unit": "rpm"        }, "name": "Generator motor speed"},
-    {"id": "INSIGHT_CABIN_AIR_TEMPERATURE",       "path": "Engine",   "fmt": {"bix": 200, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                "unit": "fahrenheit" }, "name": "Cabin air temperature"},
-    {"id": "INSIGHT_OUTSIDE_AIR_TEMPERATURE",     "path": "Engine",   "fmt": {"bix": 208, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                "unit": "fahrenheit" }, "name": "Outside air temperature"},
-    {"id": "INSIGHT_HV_BATTERY_FAN_3_SPEED",      "path": "Battery",  "fmt": {"bix": 288, "len": 8,  "max": 25500,                    "mul": 100,                                         "unit": "rpm"        }, "name": "HV battery fan 3 speed"}
+    {"id": "INSIGHT_MOTOR_INVERTER_CURRENT",      "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "max": 327.67,  "min": -327.68,                "div": 100,             "sign": true,                 "unit": "amps"       }, "name": "Motor inverter, current"},
+    {"id": "INSIGHT_BATTERY_COOLANT_TEMPERATURE", "path": "Battery",  "fmt": {"bix": 88,  "len": 8,  "max": 215,     "min": -40,                                "add": -40,               "nullmin": -40, "unit": "celsius"    }, "name": "Battery coolant temperature"},
+    {"id": "INSIGHT_BATTERY_MODULE_POWER",        "path": "Battery",  "fmt": {"bix": 168, "len": 16, "max": 524.272, "min": -524.288, "mul": 0.016,                         "sign": true,                 "unit": "kilowatts"  }, "name": "Battery module power"},
+    {"id": "INSIGHT_GENERATOR_MOTOR_SPEED",       "path": "Movement", "fmt": {"bix": 184, "len": 8,  "max": 16320,                    "mul": 64,                                                          "unit": "rpm"        }, "name": "Generator motor speed"},
+    {"id": "INSIGHT_CABIN_AIR_TEMPERATURE",       "path": "Engine",   "fmt": {"bix": 200, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                                "unit": "fahrenheit" }, "name": "Cabin air temperature"},
+    {"id": "INSIGHT_OUTSIDE_AIR_TEMPERATURE",     "path": "Engine",   "fmt": {"bix": 208, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                                "unit": "fahrenheit" }, "name": "Outside air temperature"},
+    {"id": "INSIGHT_HV_BATTERY_FAN_3_SPEED",      "path": "Battery",  "fmt": {"bix": 288, "len": 8,  "max": 25500,                    "mul": 100,                                                         "unit": "rpm"        }, "name": "HV battery fan 3 speed"}
   ]},
 { "hdr": "DBEF", "cmd": {"22": "2010"}, "freq": 5, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
