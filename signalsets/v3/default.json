@@ -86,44 +86,44 @@
     {"id": "INSIGHT_ECT_3",        "path": "Engine",  "fmt": {"bix": 1640, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 3"},
     {"id": "INSIGHT_ECT_4",        "path": "Engine",  "fmt": {"bix": 1656, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 4"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2240"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2240"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_BAT_DIST", "path": "Battery", "fmt": {"bix": 80, "len": 32, "max": 250000, "unit": "kilometers" }, "name": "Distance traveled since last charge"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_GENERATOR_PCM", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
     {"id": "INSIGHT_AC_CLU_PCM",    "path": "Engine", "fmt": {"bix": 262, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "A/C clutch"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2611"}, "freq": 1, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2611"}, "freq": 1, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_FUEL_AIR_RAT_PCM", "path": "Fuel",   "fmt": {           "len": 8,  "max": 255,                             "nullmax": 255,  "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"},
     {"id": "INSIGHT_AIRGAS_RATIO_PCM", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "mul": 29.4, "div": 65535, "nullmax": 29.4, "unit": "scalar" }, "name": "Air/gas ratio"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2612"}, "freq": 0.25, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2612"}, "freq": 0.25, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_CURRENT_GEAR_VAR_2", "path": "Transmission", "fmt": {"bix": 352, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, variant 2"},
     {"id": "INSIGHT_CURRENT_GEAR_VAR_3", "path": "Transmission", "fmt": {"bix": 368, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, variant 3"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2613"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2613"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_AC_P", "path": "Climate", "fmt": {"bix": 120, "len": 16, "max": 4000, "unit": "kilopascal" }, "name": "A/C pressure"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2660"}, "freq": 30, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2660"}, "freq": 30, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_ODO_PCM",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
     {"id": "INSIGHT_RUNTM_PCM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,    "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2661"}, "freq": 1, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2661"}, "freq": 1, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_FUELAIR_CAR_PCM", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "div": 2229.08163265, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2662"}, "freq": 1, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2662"}, "freq": 1, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_KNOCK_CTRL_PCM", "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
     {"id": "INSIGHT_VTC_DUTY_PCM",   "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "to": 2019 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "to": 2018 },
   "signals": [
     {"id": "INSIGHT_MIS_CNT_1_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1, variant 3"},
     {"id": "INSIGHT_MIS_CNT_2_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 176, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2, variant 3"},
@@ -138,7 +138,7 @@
     {"id": "INSIGHT_MIS_5_PCM",           "path": "ECU",    "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 5"},
     {"id": "INSIGHT_MIS_6_PCM",           "path": "ECU",    "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 6"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "266C"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "266C"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_MIS_CNT_1_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #1, variant 1"},
     {"id": "INSIGHT_MIS_CNT_2_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #2, variant 1"},
@@ -147,7 +147,7 @@
     {"id": "INSIGHT_MIS_CNT_5_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #5, variant 1"},
     {"id": "INSIGHT_MIS_CNT_6_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #6, variant 1"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "266D"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "266D"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_AIR_FUEL_MIXTURE", "path": "Fuel", "fmt": {"bix": 72, "len": 8, "max": 127, "div": 2, "unit": "percent" }, "name": "Air-fuel mixture heater"}
   ]},
@@ -241,34 +241,34 @@
   "signals": [
     {"id": "INSIGHT_ATF_T_VAR_4", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 4", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
-{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4004"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4004"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_BRK_SW", "path": "Electrical", "fmt": {"bix": 127, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
   ]},
-{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4005"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4005"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_BRK_P", "path": "Electrical", "fmt": {"bix": 56, "len": 16, "max": 120, "add": -25, "unit": "bars" }, "name": "Brake pressure"}
   ]},
-{ "hdr": "DA2A", "rax": "2A", "cmd": {"22": "4201"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA2A", "rax": "2A", "cmd": {"22": "4201"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_BRK_PED_STK",  "path": "Electrical", "fmt": {"bix": 88,  "len": 16, "max": 50,                     "div": 10,                "unit": "millimeters" }, "name": "Brake pedal stroke"},
     {"id": "INSIGHT_BRK_FLD_P",    "path": "Electrical", "fmt": {"bix": 168, "len": 16, "max": 5,                      "div": 100,               "unit": "unknown"     }, "name": "Brake fluid pressure"},
     {"id": "INSIGHT_MSTR_CYL_STK", "path": "Electrical", "fmt": {"bix": 232, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "millimeters" }, "name": "Master cylinder stroke"},
     {"id": "INSIGHT_SLV_CYL_STK",  "path": "Electrical", "fmt": {"bix": 248, "len": 16, "max": 6553.5,                 "div": 10,                "unit": "millimeters" }, "name": "Slave cylinder stroke"}
   ]},
-{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 200000, "unit": "miles" }, "name": "Odometer, variation 3"}
   ]},
-{ "hdr": "DA60", "rax": "60", "fcm1": true, "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA60", "rax": "60", "fcm1": true, "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_AAT", "path": "Climate", "fmt": {"bix": 132, "len": 12, "max": 2047, "min": -40, "sign": true, "nullmax": 141, "unit": "fahrenheit" }, "name": "Outside air temperature"}
   ]},
-{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7029"}, "freq": 5, "dbgfilter": { "to": 2020 },
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7029"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_FLV", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "DBEF", "cmd": {"22": "2001"}, "freq": 5, "dbgfilter": { "to": 2020 },
+{ "hdr": "DBEF", "cmd": {"22": "2001"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_MOTOR_INVERTER_CURRENT",      "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "max": 327.67,  "min": -327.68,                "div": 100,             "sign": true,                 "unit": "amps"       }, "name": "Motor inverter, current"},
     {"id": "INSIGHT_BATTERY_COOLANT_TEMPERATURE", "path": "Battery",  "fmt": {"bix": 88,  "len": 8,  "max": 215,     "min": -40,                                "add": -40,               "nullmin": -40, "unit": "celsius"    }, "name": "Battery coolant temperature"},
@@ -278,12 +278,12 @@
     {"id": "INSIGHT_OUTSIDE_AIR_TEMPERATURE",     "path": "Engine",   "fmt": {"bix": 208, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                                "unit": "fahrenheit" }, "name": "Outside air temperature"},
     {"id": "INSIGHT_HV_BATTERY_FAN_3_SPEED",      "path": "Battery",  "fmt": {"bix": 288, "len": 8,  "max": 25500,                    "mul": 100,                                                         "unit": "rpm"        }, "name": "HV battery fan 3 speed"}
   ]},
-{ "hdr": "DBEF", "cmd": {"22": "2010"}, "freq": 5, "dbgfilter": { "to": 2020 },
+{ "hdr": "DBEF", "cmd": {"22": "2010"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_HV_BATTERY_CURRENT",          "path": "Battery", "fmt": {"bix": 32,  "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "amps"    }, "name": "HV battery current"},
     {"id": "INSIGHT_DC_DC_CONVERTER_TEMPERATURE", "path": "Engine",  "fmt": {"bix": 104, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "celsius" }, "name": "DC-DC converter temperature"}
   ]},
-{ "hdr": "DBEF", "cmd": {"22": "2012"}, "freq": 1, "dbgfilter": { "to": 2020 },
+{ "hdr": "DBEF", "cmd": {"22": "2012"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020] },
   "signals": [
     {"id": "INSIGHT_HV_BATTERY_USABLE_CAPACITY",          "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                                           "unit": "percent" }, "name": "HV battery usable capacity"},
     {"id": "INSIGHT_STATE_OF_CHARGE",                     "path": "Battery", "fmt": {"bix": 40,  "len": 8,  "max": 100,                                           "unit": "percent" }, "name": "State of charge"},
