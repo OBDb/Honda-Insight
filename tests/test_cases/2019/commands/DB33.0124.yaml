@@ -17,13 +17,13 @@ test_cases:
     O2S11_VOLT: 2.34375
   response: 18DAF10E06412483F34B00
 - expected_values:
-    LAMBDA11_VOLT: 1.03226
-    O2S11_VOLT: 2.34253
-  response: 18DAF10E06412484214AF6
-- expected_values:
     LAMBDA11_VOLT: 1.99
     O2S11_VOLT: 2.2594
   response: 18DAF10E064124FFFF484D
+- expected_values:
+    LAMBDA11_VOLT: 1.99
+    O2S11_VOLT: 2.46838
+  response: 18DAF10E064124FFFF4EFD
 - expected_values:
     LAMBDA11_VOLT: 1.99
     O2S11_VOLT: 3.27808
